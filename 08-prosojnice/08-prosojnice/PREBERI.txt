@@ -1,0 +1,21 @@
+RAČUNALNIŠKI PRAKTIKUM – REŠENE PROSOJNICE
+
+1. Odpri mapo 08-prosojnice v Visual Studio Code.
+2. Odpri prosojnice.tex in pritisni Ctrl+Alt+B (LaTeX Workshop).
+3. PDF se ustvari kot prosojnice.pdf.
+4. Paket predavanja.sty ter slike fig-1.png ... fig-7.png naj ostanejo v isti mapi kot prosojnice.tex.
+5. Vmesne datoteke se vključujejo iz podmape prosojnice/.
+
+Naloge, vključene v rešitev:
+- naslovnica, kazalo in razdelki (1.3),
+- postopno odkrivanje prosojnic, bloki in izreki (2.3),
+- binomska formula z only in onslide (3.2),
+- sedem korakov konstrukcije s slikami,
+- postopno prikazovanje tabel po vrsticah in stolpcih,
+- TikZ konstrukcija pravokotnice.
+
+Končni PDF ima 41 strani, tako kot priloženi prosojnice-resitev.pdf.
+
+OPOMBA: Na povezani spletni strani je še naloga »Matematika, 1. del«, ki zahteva
+zamenjavo oznak ?? v dodatni datoteki. Take datoteke uporabnik ni priložil;
+zato ta del ni vključen in ga ni mogoče rešiti brez predloge.

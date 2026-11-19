@@ -1,0 +1,45 @@
+% Naloga 2.3.1: postopno odkrivanje vsebine s pause.
+\begin{frame}{Posebnosti prosojnic}
+    Za prosojnice je značilna uporaba okolja \texttt{frame},
+    s katerim definiramo posamezno prosojnico,
+    \pause
+    postopno odkrivanje prosojnic,
+    \pause
+    ter nekateri drugi ukazi, ki jih najdemo v paketu \texttt{beamer}.
+    \pause
+    \begin{exampleblock}{Primer}
+        Verjetno ste že opazili, da za naslovno prosojnico niste uporabili
+        ukaza \texttt{maketitle}, ampak ukaz \texttt{titlepage}.
+    \end{exampleblock}
+\end{frame}
+
+% Naloga 2.3.2: poudarjena bloka.
+\begin{frame}{Poudarjeni bloki}
+    \begin{block}{Opomba}
+        Okolja za poudarjene bloke so \texttt{block}, \texttt{exampleblock} in
+        \texttt{alertblock}.
+    \end{block}
+
+    \begin{alertblock}{Pozor!}
+        Začetek poudarjenega bloka (ukaz \texttt{begin}) vedno sprejme
+        dva argumenta: okolje in naslov bloka.
+        Drugi argument (za naslov) je lahko prazen.
+    \end{alertblock}
+\end{frame}
+
+% Naloga 2.3.3: itemize razkriva elemente brez pause.
+\begin{frame}{Tudi v predstavitvah lahko pišemo izreke in dokaze}
+    \begin{izrek}
+        Praštevil je neskončno mnogo.
+    \end{izrek}
+    \begin{proof}
+        Denimo, da je praštevil končno mnogo.
+        \begin{itemize}[<+->]
+            \item Naj bo \(p\) \alert<4>{največje} praštevilo.
+            \item Naj bo \(q\) produkt števil \(1\), \(2\), \ldots, \(p\).
+            \item Število \(q+1\) ni deljivo z nobenim praštevilom,
+                  torej je \(q+1\) praštevilo.
+            \item To je protislovje, saj je \(q+1>p\). \qedhere
+        \end{itemize}
+    \end{proof}
+\end{frame}

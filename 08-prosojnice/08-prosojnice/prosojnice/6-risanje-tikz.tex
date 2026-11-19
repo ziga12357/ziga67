@@ -1,0 +1,27 @@
+% Koraki konstrukcije se razkrijejo na šestih podprosojnicah.
+\begin{frame}{Konstrukcija pravokotnice}
+    \centering
+    \begin{tikzpicture}
+        \coordinate (T) at (0,1.4);
+        % Nevidne poti, ki omogočijo izračun presečišč na vseh podprosojnicah.
+        \path[name path=p] (-3,0) -- (3,0);
+        \path[name path=k] (T) ++(210:2) arc (210:330:2);
+        \path[name intersections={of=p and k,by={A,B}}];
+        \path[name path=m] (A) ++(-70:2) arc (-70:70:2);
+        \path[name path=n] (B) ++(250:2) arc (250:110:2);
+        \path[name intersections={of=m and n,by={C,Tprime}}];
+
+        \draw[blue,very thick] (-3,0)--(3,0) node[right] {$p$};
+        \draw<2->[gray] (T) ++(210:2) arc (210:330:2);
+        \draw<3->[gray] (A) ++(-70:2) arc (-70:70:2);
+        \draw<4->[gray] (B) ++(250:2) arc (250:110:2);
+        \draw<6->[red,very thick] (T)--(C);
+
+        \fill[blue] (T) circle (2pt) node[above left] {$T$};
+        \only<2->{
+            \draw (A) circle (1.5pt) node[below left] {$A$};
+            \draw (B) circle (1.5pt) node[below right] {$B$};
+        }
+        \only<5->{\draw (C) circle (1.5pt) node[below right] {$C$};}
+    \end{tikzpicture}
+\end{frame}

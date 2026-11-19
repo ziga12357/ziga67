@@ -1,0 +1,6 @@
+\babel@toc {slovene}{}\relax 
+\beamer@sectionintoc {1}{Paket \texttt {beamer}}{3}{0}{1}
+\beamer@sectionintoc {2}{Paketa \texttt {amsmath} in \texttt {amsfonts}}{13}{0}{2}
+\beamer@sectionintoc {3}{Stolpci in slike}{17}{0}{3}
+\beamer@sectionintoc {4}{Paket \texttt {beamer} in tabele}{25}{0}{4}
+\beamer@sectionintoc {5}{Risanje s paketom TikZ}{35}{0}{5}

@@ -1,0 +1,46 @@
+\documentclass{beamer}
+% Naloga 1.3.1: razred beamer brez ročno določene velikosti pisave.
+
+% Naloga 1.3.2: vključimo paket iz gradiva.
+\usepackage{predavanja}
+\usepackage{array}
+\usetikzlibrary{intersections}
+
+% Naloga 1.3.3: okolje za izreke.
+\newtheorem{izrek}{Izrek}
+
+% Naloga 1.3.4: podatki za naslovnico.
+\title{Matematični izrazi in uporaba paketa \texttt{beamer}}
+\subtitle{Vaje pri predmetu \emph{Računalniški praktikum}}
+\institute{Fakulteta za matematiko in fiziko}
+\date{}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+% Naloga 1.3.5: kazalo brez postopnega odkrivanja.
+\begin{frame}{Kratek pregled}
+    % \tableofcontents[pausesections]
+    \tableofcontents
+\end{frame}
+
+% Vsi \section so zunaj okolij frame.
+\section{Paket \texttt{beamer}}
+\input{prosojnice/1-paket-beamer.tex}
+
+\section{Paketa \texttt{amsmath} in \texttt{amsfonts}}
+\input{prosojnice/3-odkrivanje-v-okolju-align.tex}
+
+\section{Stolpci in slike}
+\input{prosojnice/4-stolpci-slike.tex}
+
+\section{Paket \texttt{beamer} in tabele}
+\input{prosojnice/5-beamer-tabele.tex}
+
+\section{Risanje s paketom TikZ}
+\input{prosojnice/6-risanje-tikz.tex}
+
+\end{document}
